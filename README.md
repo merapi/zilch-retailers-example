@@ -18,7 +18,6 @@ A high-performance React Native Master-Detail showcase built with Expo, demonstr
 - **State & Data**: [TanStack Query (React Query)](https://tanstack.com/query/latest)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **UI Components**: Custom Themed components with Light/Dark mode support.
-- **BottomSheet**: [@gorhom/bottom-sheet](https://github.com/gorhom/react-native-bottom-sheet) (v5)
 
 ## 🧪 Testing Pyramid
 
@@ -28,21 +27,25 @@ A high-performance React Native Master-Detail showcase built with Expo, demonstr
 ## 🏃 Getting Started
 
 ### 1. Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 2. Run the App
+
 ```bash
 npx expo start
 ```
 
 ### 3. Run Jest Tests
+
 ```bash
 npm test
 ```
 
 ### 4. Run Maestro E2E
+
 ```bash
 # Start with simulation disabled for clean E2E run
 EXPO_PUBLIC_API_SIMULATION_DISABLED=true npx expo start

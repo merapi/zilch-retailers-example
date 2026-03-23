@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
   },
   safeArea: {
     flex: 1,
+    paddingBottom: Spacing.five,
   },
   scrollContent: {
     padding: Spacing.four,

@@ -12,12 +12,12 @@ export default function AppTabs() {
     <NativeTabs
       backgroundColor={colors.background}
       indicatorColor={colors.backgroundElement}
-      iconColor={{ selected: "#00D287", default: "#222222" }}
+      iconColor={{ selected: colors.primary, default: colors.tabIconDefault }}
       labelStyle={{
-        default: { color: "#222222" },
-        selected: { color: "#00D287" },
+        default: { color: colors.tabIconDefault },
+        selected: { color: colors.primary },
       }}
-      rippleColor="rgba(0, 210, 135, 0.1)"
+      rippleColor={`${colors.primary}1A`}
       minimizeBehavior="onScrollDown"
     >
       <NativeTabs.Trigger name="index">

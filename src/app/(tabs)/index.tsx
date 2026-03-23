@@ -129,7 +129,7 @@ export default function HomeScreen() {
           </View>
         ) : data?.length === 0 ? (
           <ThemedView style={styles.emptyContainer}>
-            <ThemedText style={styles.emptyText}>
+            <ThemedText style={[styles.emptyText, { color: colors.textSecondary }]}>
               No retailers found.
             </ThemedText>
           </ThemedView>
@@ -207,7 +207,6 @@ const styles = StyleSheet.create({
   emptyText: {
     textAlign: "center",
     fontSize: 16,
-    color: "#60646C",
   },
   listContent: {
     paddingHorizontal: Spacing.four,

@@ -149,7 +149,7 @@ export default function RetailerDetailScreen() {
                 >
                   Website
                 </ThemedText>
-                <ThemedText style={{ color: "#00D287" }}>
+                <ThemedText style={{ color: colors.primary }}>
                   {(data as RetailerDetail).website}
                 </ThemedText>
 
@@ -159,7 +159,7 @@ export default function RetailerDetailScreen() {
                 >
                   Cashback
                 </ThemedText>
-                <ThemedText type="title" style={{ color: "#00D287" }}>
+                <ThemedText type="title" style={{ color: colors.primary }}>
                   {(data as RetailerDetail).cashback}%
                 </ThemedText>
               </ThemedView>

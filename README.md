@@ -11,7 +11,7 @@ A high-performance React Native Master-Detail showcase built with Expo, demonstr
 
 - **Master-Detail Flow**: Seamless navigation between a list of 120+ retailers and their full details.
 - **Cache-First UI**: Uses TanStack Query to instantly show partial data from the list cache while background-fetching extra details.
-- **Resilient API Layer**: Simulated 10% network failure rate with graceful UI fallbacks and retry mechanisms.
+- **Resilient API Layer**: Simulated 50% network failure rate with graceful UI fallbacks and retry mechanisms (retry disabled in this demo).
 - **Optimized Search**: Debounced search input (250ms) to throttle API requests.
 - **Keyboard Optimization**: Seamless list interaction using `keyboardShouldPersistTaps`.
 - **E2E Testability**: Usage of stable `testID` props across critical components.

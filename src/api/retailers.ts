@@ -1,4 +1,4 @@
-import { Retailer, RetailerDetail } from '@/types/retailer';
+import { Retailer, RetailerDetail } from "@/types/retailer";
 
 const baseMockRetailers: RetailerDetail[] = [
   {
@@ -75,12 +75,13 @@ const baseMockRetailers: RetailerDetail[] = [
   },
 ];
 
-let mockRetailers: RetailerDetail[] = Array.from({ length: 15 }).flatMap((_, i) =>
-  baseMockRetailers.map((r) => ({
-    ...r,
-    id: `${i * baseMockRetailers.length + parseInt(r.id)}`,
-    name: i === 0 ? r.name : `${r.name} ${i + 1}`,
-  })),
+let mockRetailers: RetailerDetail[] = Array.from({ length: 15 }).flatMap(
+  (_, i) =>
+    baseMockRetailers.map((r) => ({
+      ...r,
+      id: `${i * baseMockRetailers.length + parseInt(r.id)}`,
+      name: i === 0 ? r.name : `${r.name} ${i + 1}`,
+    })),
 );
 
 /**
@@ -90,18 +91,16 @@ export const setMockRetailers = (data: RetailerDetail[]) => {
   mockRetailers = data;
 };
 
-const isSimulationDisabled = 
-  process.env.NODE_ENV === "test" || 
+const isSimulationDisabled =
+  process.env.NODE_ENV === "test" ||
   process.env.EXPO_PUBLIC_API_SIMULATION_DISABLED === "true";
 
 const delay = (ms: number) =>
-  new Promise((resolve) =>
-    setTimeout(resolve, isSimulationDisabled ? 0 : ms),
-  );
+  new Promise((resolve) => setTimeout(resolve, isSimulationDisabled ? 0 : ms));
 
 const simulateNetworkIssue = () => {
   if (isSimulationDisabled) return;
-  if (Math.random() < 0.1) {
+  if (Math.random() < 0.5) {
     throw new Error("Network Error: Simulated connection failure");
   }
 };

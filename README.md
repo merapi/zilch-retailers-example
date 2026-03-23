@@ -20,9 +20,10 @@ A high-performance React Native Master-Detail showcase built with Expo, demonstr
 
 - **Framework**: React Native with [Expo](https://expo.dev)
 - **Routing**: [Expo Router](https://docs.expo.dev/router/introduction/) (File-based)
-- **State & Data**: [TanStack Query (React Query)](https://tanstack.com/query/latest)
+- **State & Data**: [TanStack Query (React Query)](https://tanstack.com/query/latest) for server state data, no need for client state in this demo (would use _Zustand_ or Redux).
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **UI Components**: Custom Themed components with Light/Dark mode support.
+- **List**: Basic FlatList, for better performance we can consider FlashList or _LegendList_.
 
 ## 🧪 Testing Pyramid
 

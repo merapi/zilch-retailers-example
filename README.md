@@ -2,6 +2,11 @@
 
 A high-performance React Native Master-Detail showcase built with Expo, demonstrating Staff-level architectural patterns, resilient data fetching, and a comprehensive testing suite.
 
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/70a83e32-93c4-4094-ae52-3fbe23d88542" width="100%" style="max-width: 800px;" autoplay loop muted playsinline>
+  </video>
+</div>
+
 ## 🚀 Key Features
 
 - **Master-Detail Flow**: Seamless navigation between a list of 120+ retailers and their full details.

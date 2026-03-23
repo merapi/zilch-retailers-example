@@ -1,0 +1,18 @@
+appId: com.merapi.zilchretailersexample
+---
+- launchApp
+- assertVisible: "Search retailers..."
+- tapOn: "Search retailers..."
+- inputText: "Amazon"
+- waitForAnimationToEnd
+- assertVisible: "Amazon"
+- tapOn: "Amazon 2.*"
+- waitForAnimationToEnd
+- assertVisible: "About"
+- assertVisible: "amazon.com"
+- tapOn:
+    id: "back-button"
+- assertVisible: "Retailers"
+- tapOn:
+    id: "clear-search-button"
+- assertVisible: "Ebay.*"

@@ -1,0 +1,5 @@
+# Maestro configuration
+# This file can be used to set global variables
+# For Expo, the APP_ID depends on your bundle identifier or package name.
+# Default for development is often 'host.exp.Exponent' (iOS Simulator) or similar.
+# You can override this when running: maestro test -e APP_ID=your.id .maestro/golden-path.yaml

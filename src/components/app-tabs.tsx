@@ -18,6 +18,8 @@ export default function AppTabs() {
         selected: { color: colors.primary },
       }}
       rippleColor={`${colors.primary}1A`}
+      // Nice feature (WoW effect) but currently not working, NativeTabs don't support FlatList, only ScrollView works ATM.
+      // See: https://docs.expo.dev/router/advanced/native-tabs/#limited-support-for-flatlist
       minimizeBehavior="onScrollDown"
     >
       <NativeTabs.Trigger name="index">

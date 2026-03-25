@@ -76,7 +76,7 @@ export default function AboutScreen() {
               <ThemedText style={styles.bold}>
                 Resilient Error Handling:
               </ThemedText>{" "}
-              simulated 10% network failure rate with graceful UI fallbacks and
+              simulated 50% network failure rate with graceful UI fallbacks and
               retry mechanisms.
             </ThemedText>
             <ThemedText style={styles.text}>
